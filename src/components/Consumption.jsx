@@ -1,6 +1,4 @@
-import { useTable } from 'react-table'
-
-const data = [
+const __data = [
     {
       "rec_id": 1,
       "use_id": 1,
@@ -24,7 +22,7 @@ const data = [
     }
 ];
 
-const Consumption = () => {
+const Consumption = ({data}) => {
   return (
     <div>
       <h1>消费记录</h1>

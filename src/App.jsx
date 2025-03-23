@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 // import Note from './components/Note'
 import Consumption from './components/Consumption'
+import ButtonUsage from './components/material_ui_test/Guike'
+
 
 const App = () => {
 
@@ -17,10 +19,12 @@ const App = () => {
   }, [])
 
 
+
   return (
     <div>
       <h1>Hello PFO Professional Version</h1>
-      <Consumption />
+      <Consumption data={data}/>
+      <ButtonUsage />
     </div>
   )
 }
